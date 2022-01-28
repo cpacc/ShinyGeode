@@ -1,0 +1,21 @@
+Package: ShinyGeode
+Title: User Friendly Interface for Geode
+Version: 0.1.0
+Authors@R: 
+    person(given = "Michael",
+           family = "Otterstatter",
+           role = c("aut", "cre"),
+           email = "michael.otterstatter@gmail.com",
+           comment = c(ORCID = "https://orcid.org/0000-0001-5489-014X"))
+Description: ShinyGeode is a friendly graphical interface that allows users to access the spatial mapping and analysis functions of Geode through drop-down menus, sliders, checkboxes, etc.  No R coding is required.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports: 
+    DT (>= 0.20),
+    geode (>= 0.1.2),
+    rlang (>= 0.4.12)
+Depends: 
+    R (>= 2.10)
+LazyData: true
