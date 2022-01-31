@@ -21,7 +21,7 @@ ShinyGeode <- function(...) {
   
   ui <- fluidPage(
     
-    titlePanel(p("GEODE: A tool for spatial mapping and analysis", style = "color:#1F2F88")),
+    titlePanel(p("ShinyGeode: An interface for spatial mapping and analysis", style = "color:#1F2F88")),
     
     
     # Output display with tabs
@@ -67,13 +67,14 @@ ShinyGeode <- function(...) {
                            
                            mainPanel(
                              
-                             DT::DTOutput(outputId = "shptable"),
+                            
+                             div(DT::DTOutput(outputId = "shptable"), style = "font-size: 75%; width: 50%"),
                              
                              hr(),
                              headerPanel(""),
                              br(),
                              
-                             DT::DTOutput(outputId = "attrtable")
+                             div(DT::DTOutput(outputId = "attrtable"), style = "font-size: 75%; width: 50%")
                              
                            )
                          )
@@ -272,7 +273,7 @@ ShinyGeode <- function(...) {
 
 # Proximity analysis page -------------------------------------------------
                 
-                tabPanel("Proximity Analysis", fluid = TRUE,
+                tabPanel("Proximity analysis", fluid = TRUE,
                          
                          sidebarLayout(
                            
@@ -926,3 +927,5 @@ ShinyGeode <- function(...) {
   
   shinyApp(ui, server, ...)
 }
+
+ShinyGeode()
