@@ -1,12 +1,6 @@
 library(shiny)
 library(tmap)
 
-#########################################################################
-#
-# TODO: fix show legend checkbox (unchecking doesn't remove legend)
-#
-#########################################################################
-
 # Set system options ------------------------------------------------------
 
 # max file size for upload
@@ -15,6 +9,16 @@ options(shiny.maxRequestSize = 50 * 1024^2)
 
 
 # SHINYGEODE --------------------------------------------------------------
+
+#' A user-friendly interface for accessing the spatial mapping and analysis functions of geode
+#' 
+#' The ShinyGeode interface allows interactive visualization, mapping and analysis of geospatial 
+#' data through point-and-click, drop-down menus, checkboxes and sliders; no R coding is required.
+#' The purpose of ShinyGeode is to provide a low barrier interface that benefits a wide range of 
+#' users. It allows rapid interaction with spatial data for identifying patterns, generating 
+#' hypotheses, and informing further investigation and analysis.
+
+ 
 
 ShinyGeode <- function(...) {
   
