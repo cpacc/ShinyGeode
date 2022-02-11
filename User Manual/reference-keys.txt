@@ -1,0 +1,11 @@
+usage
+structure-of-the-interface
+getting-started
+pages
+data
+choropleth-map
+pointmap
+heatmap
+spatial-patterns
+proximity-analysis
+cluster-detection
