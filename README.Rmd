@@ -30,18 +30,14 @@ In R, you can install ShinyGeode directly from the CPAC [GitHub](https://github.
 
 ``` r
 install.packages("remotes")
-remotes::install_github("cpacc/ShinyGeode")
+remotes::install_github("cpacc/geode") # install or update geode package
+remotes::install_github("cpacc/ShinyGeode") # then install ShinyGeode interface
 ```
 
 ## Getting started
 
-All requirements and instructions for getting started can be found in the ShinyGeode User Manual. A PDF version of the manual can be found at
+All requirements and instructions for getting started can be found in the ShinyGeode User Manual. A PDF and MS Word version of the manual can be found at
 
+https://github.com/cpacc/ShinyGeode/blob/master/User%20Manual/User%20Manual.pdf
 
-
-An HTML version of the manual is also provided at
-
-
-
-The HTML version is contained in a zip folder. Download and unzip (using 7-zip, as above), and then click on the manual shortcut ‘users_manual_HTML’.
-
+https://github.com/cpacc/ShinyGeode/blob/master/User%20Manual/User%20Manual.docx
