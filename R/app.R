@@ -17,7 +17,8 @@ options(shiny.maxRequestSize = 50 * 1024^2)
 #' The purpose of ShinyGeode is to provide a low barrier interface that benefits a wide range of 
 #' users. It allows rapid interaction with spatial data for identifying patterns, generating 
 #' hypotheses, and informing further investigation and analysis.
-
+#' 
+#' @export
  
 
 ShinyGeode <- function(...) {
