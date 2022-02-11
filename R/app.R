@@ -1,5 +1,10 @@
 # SHINYGEODE --------------------------------------------------------------
 
+# library(shiny)
+
+# max file size for upload
+options(shiny.maxRequestSize = 50 * 1024^2)
+
 #' A user-friendly interface for accessing the spatial mapping and analysis functions of geode
 #' 
 #' The ShinyGeode interface allows interactive visualization, mapping and analysis of geospatial 
@@ -13,10 +18,7 @@
 #' 
 #' @export
  
-library(shiny)
 
-# max file size for upload
-options(shiny.maxRequestSize = 50 * 1024^2)
 
 ShinyGeode <- function(...) {
   
