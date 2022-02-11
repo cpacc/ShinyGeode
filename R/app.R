@@ -1,13 +1,3 @@
-library(shiny)
-library(tmap)
-
-# Set system options ------------------------------------------------------
-
-# max file size for upload
-options(shiny.maxRequestSize = 50 * 1024^2)
-
-
-
 # SHINYGEODE --------------------------------------------------------------
 
 #' A user-friendly interface for accessing the spatial mapping and analysis functions of geode
@@ -18,8 +8,15 @@ options(shiny.maxRequestSize = 50 * 1024^2)
 #' users. It allows rapid interaction with spatial data for identifying patterns, generating 
 #' hypotheses, and informing further investigation and analysis.
 #' 
+#' @import shiny
+#' @import tmap
+#' 
 #' @export
  
+library(shiny)
+
+# max file size for upload
+options(shiny.maxRequestSize = 50 * 1024^2)
 
 ShinyGeode <- function(...) {
   
