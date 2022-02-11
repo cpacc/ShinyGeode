@@ -15,7 +15,8 @@ RoxygenNote: 7.1.2
 Imports: 
     DT (>= 0.20),
     geode (>= 0.1.2),
-    rlang (>= 0.4.12)
+    rlang (>= 0.4.12),
+    shiny (>= 1.7.1)
 Depends: 
     R (>= 2.10)
 LazyData: true
